@@ -6,7 +6,7 @@ def display_board(board)
    puts " #{board[6]} | #{board[7]} | #{board[8]} "
 end
 
-  def move(board, index, character = "X")
+def move(board, index, character = "X")
      board[index] = character
 end
 
@@ -17,3 +17,4 @@ end
 input_to_index("1") # => 0
 input_to_index("6") # => 5
 input_to_index("invalid") # => -1
+
