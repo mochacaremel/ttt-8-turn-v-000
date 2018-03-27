@@ -99,13 +99,13 @@ end
 
     def over?(board)
       if full?(board) == true
-        return true # returns true for a won game / draw
+        return true 
       end
-      return false # returns false for an in-progress game
+      return false 
     end
 
 def winner(board)
- # returns X when X won, O when O won and nill when no winner
+
  if (draw?(board) || !full?(board)) && !won?(board)
     return nil
   elsif (board[won?(board)[0]] == "X")
