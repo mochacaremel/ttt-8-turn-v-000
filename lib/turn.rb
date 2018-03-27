@@ -18,6 +18,8 @@ input_to_index("1") # => 0
 input_to_index("6") # => 5
 input_to_index("invalid") # => -1
 
+
+
 def valid_move?(board, index)
   if index.between?(0,8) && !position_taken?(board, index)
       puts 'this is a valid move'
