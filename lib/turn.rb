@@ -34,7 +34,7 @@ def position_taken?(board,position)
 end
 
 def valid_move?(board, index)
-  if index(0,8) && !position_taken?(board, index)
+  if input_to_index(0,8) && !position_taken?(board, index)
       puts 'this is a valid move'
     return true
   else
