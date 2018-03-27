@@ -53,5 +53,5 @@ def turn
   end
   
   move(board, index) 
-end
   display_board(board)
+end
