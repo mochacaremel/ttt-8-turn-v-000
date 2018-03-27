@@ -70,7 +70,4 @@ if valid_move?(number_entered, board)
   move(board, number_entered) 
 #   - show the board
   display_board(board)
-  # if valid_move?(board, index) == false
-    # turn(board)
-#   end
-# end
+end
