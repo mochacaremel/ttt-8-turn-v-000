@@ -18,7 +18,18 @@ input_to_index("1") # => 0
 input_to_index("6") # => 5
 input_to_index("invalid") # => -1
 
+def position_taken?(board,position)
+  if board[position] == " "
+    false
+    elsif board[position] == ""
+    false
+    elsif  board[position] == nil
+    false
+    else   board[position] == "X" || "O"
+    true
 
+  end
+end
 
 def valid_move?(board, index)
   if index.between?(0,8) && !position_taken?(board, index)
