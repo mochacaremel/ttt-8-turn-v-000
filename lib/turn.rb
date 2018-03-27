@@ -19,7 +19,6 @@ input_to_index("6") # => 5
 input_to_index("invalid") # => -1
 
 def valid_move?(board, index)
-
   if index.between?(0,8) && !position_taken?(board, index)
       puts 'this is a valid move'
     return true
@@ -30,7 +29,7 @@ end
 
 def turn(board)
   puts "Please enter 1-9:"
-  input = gets.strip index = input_to_index(input)
+  input = gets.strip index = input_to_index(user_input)
   if valid_move?(board, index) == false
     turn(board)
   end
