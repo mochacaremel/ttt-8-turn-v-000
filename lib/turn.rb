@@ -12,6 +12,7 @@ puts "Enter a position on the board 1-9:"
 
 def move(board, index, character = "X")
      board[index] = character
+      display_board(board)
 end
 
 def input_to_index(user_input)
@@ -51,7 +52,3 @@ def turn
   if valid_move?(board, index) == false
     # turn(board)
   end
-  
-  move(board, index) 
-  display_board(board)
-end
