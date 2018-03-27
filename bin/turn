@@ -11,6 +11,8 @@ turn(board)
   index = input_to_index(user_input)
   if valid_move?(board, index) == false
   end
+  
+number_entered = user_input.to_i - 1
 
 #asks for input
 #puts "Enter a position on the board 1-9:"
