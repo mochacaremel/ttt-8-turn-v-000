@@ -5,8 +5,7 @@ board = [" "," "," "," "," "," "," "," "," "]
 
 puts "Welcome to Tic Tac Toe!"
 display_board(board)
-
-def turn(board)
+turn(board)
   puts "Please enter 1-9:"
  user_input = STDIN.gets.strip 
   index = input_to_index(user_input)
