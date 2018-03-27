@@ -1,4 +1,3 @@
-# self-explanatory, prints arbitrary arrangements of the board
 def display_board(board)
   puts " #{board[0]} | #{board[1]} | #{board[2]} "
   puts "-----------"
@@ -7,7 +6,6 @@ def display_board(board)
   puts " #{board[6]} | #{board[7]} | #{board[8]} "
 end
 
-# defines a constant with arrays for each win condition
 win_conditions = [
   [0, 1, 2],
   [0, 3, 6],
@@ -22,7 +20,7 @@ win_conditions = [
 def input_to_index(input)
 # convert input to integer and subtract 1.
   input.to_i - 1
-  # users count from 1, Ruby from 0
+
 end
 
 def move(board, index, symbol)
@@ -39,7 +37,7 @@ end
 
 def valid_move?(board, index)
   index.between?(0,8) && !position_taken?(board, index)
-   # if the position isnt taken and is on the board, move must be valid
+ 
 end
 
 def turn(board)
@@ -68,24 +66,24 @@ def turn_count(board)
 
 def current_player(board)
   if turn_count(board) % 2 == 0
-  # returns the correct player, X, for the first move
+
     return "X"
   else
-    # O for the second move
+
     return "O"
   end
 end
 
 def won?(board)
   win_conditions.each do |win|
-  #  returns an array of matching indexes for a win
+
   if win.all?{|y| board[y] == "X"}
     return win
     elsif win.all?{|y| board[y] == "O"}
       return win
     end
   end
-  return false # returns false for an empty board / a draw
+  return false 
 end
 
 def full?(board)
