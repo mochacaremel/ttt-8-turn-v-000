@@ -6,9 +6,6 @@ def display_board(board)
    puts " #{board[6]} | #{board[7]} | #{board[8]} "
 end
 
-def user_input = gets.chomp!
-end
-
 board = ["","X"," "," "," "," "," "," "," "]
 puts "Enter a position on the board 1-9:"
 number_entered = user_input.to_i - 1
