@@ -50,6 +50,7 @@ def turn
   if valid_move?(board, index) == false
     turn(board)
   end
+  
   move(board, index) 
 end
   display_board(board)
