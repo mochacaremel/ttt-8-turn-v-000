@@ -6,7 +6,7 @@ def display_board(board)
    puts " #{board[6]} | #{board[7]} | #{board[8]} "
 end
 def user_input 
-  gets.chomp!
+  get.chomp!
 end
 
 board = ["","X"," "," "," "," "," "," "," "]
