@@ -62,6 +62,10 @@ end
 input_to_index("1") # => 0
 input_to_index("6") # => 5
 input_to_index("invalid") # => -1
+
+final_position = number_entered()
+
+
   # if valid_move?(board, index) == false
     # turn(board)
 #   end
