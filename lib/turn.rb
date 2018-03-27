@@ -52,41 +52,41 @@ end
 #   end
 # end
 
-# def turn(board)
-#   puts "Please enter 1-9:"
-#   user_input = STDIN.gets.strip 
-#   index = input_to_index(user_input)
-# end
+def turn(board)
+  puts "Please enter 1-9:"
+  user_input = STDIN.gets.strip 
+  index = input_to_index(user_input)
+end
 
-# def position_taken?(board, index)
-# !(board[index] == " " || board[index] == "" || board[index] == nil)
-# end
+def position_taken?(board, index)
+!(board[index] == " " || board[index] == "" || board[index] == nil)
+end
 
-# def user_input
-#   user_input.to_i - 1
-# end
+def user_input
+  user_input.to_i - 1
+end
 
-# def input_to_index
-#   user_input = user_input.to_i - 1
-# end
+def input_to_index
+  user_input = user_input.to_i - 1
+end
 
-# input_to_index("1") # => 0
-# input_to_index("6") # => 5
-# input_to_index("invalid") # => -1
+input_to_index("1") # => 0
+input_to_index("6") # => 5
+input_to_index("invalid") # => -1
 
-# final_position = number_entered()
+final_position = number_entered()
 
-# if valid_move?(number_entered, board)
-#   move(board, number_entered) 
-#   display_board(board)
-# end
+if valid_move?(number_entered, board)
+  move(board, number_entered) 
+  display_board(board)
+end
 
-#     allow(self).to receive(:gets).and_return("5")
+    allow(self).to receive(:gets).and_return("5")
 
-#       output = capture_puts{ turn(board) }
+      output = capture_puts{ turn(board) }
 
-#       expect(output).to include("   |   |   ")
-#       expect(output).to include("-----------")
-#       expect(output).to include("   | X |   ")
-#       expect(output).to include("-----------")
-#       expect(output).to include("   |   |   ")
+      expect(output).to include("   |   |   ")
+      expect(output).to include("-----------")
+      expect(output).to include("   | X |   ")
+      expect(output).to include("-----------")
+      expect(output).to include("   |   |   ")
