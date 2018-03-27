@@ -61,8 +61,6 @@ input_to_index("invalid") # => -1
 final_position = number_entered()
 
 if valid_move?(number_entered, board)
-#   - make the move for index
   move(board, number_entered) 
-#   - show the board
   display_board(board)
 end
