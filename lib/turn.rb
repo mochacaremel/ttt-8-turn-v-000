@@ -10,7 +10,7 @@ end
 
 board = ["","X"," "," "," "," "," "," "," "]
 puts "Enter a position on the board 1-9:"
-# number_entered = user_input.to_i - 1
+number_entered = user_input.to_i - 1
 
 def move(board, index, character = "X")
      board[index] = character
