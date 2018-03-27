@@ -9,9 +9,7 @@ if position_taken?(board, test) == false && test.between?(0, 8)
 
 true
 
-else
-
-false
+else false
 
 end
 
