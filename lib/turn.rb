@@ -29,13 +29,7 @@ if board[position] == ” ” || board[position] == “” || board[position] ==
 
 false
 
-else board[position] == “X” || board[position] == “O”
-
-true
-
-end
-
- 
+else board[position] == “X” || board[position] == “O” == true
 
 end
 
