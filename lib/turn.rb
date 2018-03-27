@@ -71,3 +71,13 @@ if valid_move?(number_entered, board)
   move(board, number_entered) 
   display_board(board)
 end
+
+     allow(self).to receive(:gets).and_return("5")
+
+      output = capture_puts{ turn(board) }
+
+      expect(output).to include("   |   |   ")
+      expect(output).to include("-----------")
+      expect(output).to include("   | X |   ")
+      expect(output).to include("-----------")
+      expect(output).to include("   |   |   ")
