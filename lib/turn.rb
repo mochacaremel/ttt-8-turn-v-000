@@ -53,6 +53,6 @@ def turn
   end
 end
   
-  move(board, index) 
-end
-  display_board(board)
+#   move(board, index) 
+# end
+#   display_board(board)
