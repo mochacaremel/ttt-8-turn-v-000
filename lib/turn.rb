@@ -15,6 +15,9 @@ def move(board, index, character = "X")
       display_board(board)
 end
 
+def number_entered = user_input.to_i - 1
+end
+
 # def input_to_index(user_input)
 #   user_input = user_input.to_i
 #   user_input = user_input - 1
