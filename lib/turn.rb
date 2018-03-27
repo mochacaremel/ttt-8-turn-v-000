@@ -33,6 +33,8 @@ else board[position] == “X” || board[position] == “O” == true
 
 end
 
+end
+
 
 
 
