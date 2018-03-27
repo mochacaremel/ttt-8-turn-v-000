@@ -11,7 +11,6 @@ turn(board)
   index = input_to_index(user_input)
   if valid_move?(board, index) == false
   end
-end
 
 #asks for input
 #puts "Enter a position on the board 1-9:"
