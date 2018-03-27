@@ -15,7 +15,7 @@ def move(board, index, character = "X")
       display_board(board)
 end
 
-def number_entered == user_input.to_i - 1
+def number_entered ; user_input.to_i - 1
 end
 
 def position_taken?(board,position)
