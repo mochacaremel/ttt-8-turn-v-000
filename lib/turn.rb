@@ -1,19 +1,3 @@
-def valid_move?(board, position)
-
-move = position.to_i
-test = move - 1
-if position_taken?(board, test) == false && test.between?(0, 8)
-true
-else false
-end
-end
-
- 
-
- 
-
- 
-
 # def display_board(board)
 #   puts " #{board[0]} | #{board[1]} | #{board[2]} "
 #   puts "-----------"
@@ -49,6 +33,15 @@ end
 
 #   end
 # end
+def valid_move?(board, position)
+
+move = position.to_i
+test = move - 1
+if position_taken?(board, test) == false && test.between?(0, 8)
+true
+else false
+end
+end
 
 # def valid_move?(board, index)
 #   if input_to_index(0,8) && !position_taken?(board, index)
