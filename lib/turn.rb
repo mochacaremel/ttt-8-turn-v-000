@@ -1,38 +1,38 @@
-# def display_board(board)
-#   puts " #{board[0]} | #{board[1]} | #{board[2]} "
-#   puts "-----------"
-#   puts " #{board[3]} | #{board[4]} | #{board[5]} "
-#   puts "-----------"
-#   puts " #{board[6]} | #{board[7]} | #{board[8]} "
-# end
-# def user_input 
-#   STDIN.gets.chomp!
-# end
+def display_board(board)
+  puts " #{board[0]} | #{board[1]} | #{board[2]} "
+  puts "-----------"
+  puts " #{board[3]} | #{board[4]} | #{board[5]} "
+  puts "-----------"
+  puts " #{board[6]} | #{board[7]} | #{board[8]} "
+end
+def user_input 
+  STDIN.gets.chomp!
+end
 
-# board = ["","X"," "," "," "," "," "," "," "]
-# puts "Enter a position on the board 1-9:"
-# number_entered = user_input.to_i - 1
+board = ["","X"," "," "," "," "," "," "," "]
+puts "Enter a position on the board 1-9:"
+number_entered = user_input.to_i - 1
 
-# def move(board, index, character = "X")
-#     board[index] = character
-#       display_board(board)
-# end
+def move(board, index, character = "X")
+    board[index] = character
+      display_board(board)
+end
 
-# def number_entered ; user_input.to_i - 1
-# end
+def number_entered ; user_input.to_i - 1
+end
 
-# def position_taken?(board,position)
-#   if board[position] == " "
-#     false
-#     elsif board[position] == ""
-#     false
-#     elsif  board[position] == nil
-#     false
-#     else   board[position] == "X" || "O"
-#     true
+def position_taken?(board,position)
+  if board[position] == " "
+    false
+    elsif board[position] == ""
+    false
+    elsif  board[position] == nil
+    false
+    else   board[position] == "X" || "O"
+    true
 
-#   end
-# end
+  end
+end
 
 def valid_move?(board, position)
 move = position.to_i
