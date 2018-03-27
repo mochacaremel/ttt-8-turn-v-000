@@ -12,8 +12,8 @@ def turn
 end
 
 #asks for input
-puts "Enter a position on the board 1-9:"
+#puts "Enter a position on the board 1-9:"
 #get input
-user_input = gets.chomp
+#user_input = gets.chomp
 #convert input to index
-number_entered = user_input.to_i - 1
+#number_entered = user_input.to_i - 1
