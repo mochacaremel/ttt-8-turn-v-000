@@ -2,6 +2,10 @@
 require_relative '../lib/turn'
 
 board = ["","X"," "," "," "," "," "," "," "]
+
+puts "Welcome to Tic Tac Toe!"
+display_board
+
 def turn(board)
   puts "Please enter 1-9:"
  user_input = STDIN.gets.strip 
