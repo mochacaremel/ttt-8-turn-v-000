@@ -6,7 +6,11 @@ def display_board(board)
    puts " #{board[6]} | #{board[7]} | #{board[8]} "
 end
 
-def valid_move?(number_entered, board)
-  number_entered.between?(0, 8) && !(position_taken?(board, number_entered))
+  def move(board, index, character = "X")
+    # puts move[board, index, character]
+    # position = gets.strip
+    # character = X
+  board[index] = character
+  # move(board, 2)
+  # puts move(board)
 end
-
