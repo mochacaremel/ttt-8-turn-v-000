@@ -7,10 +7,5 @@ def display_board(board)
 end
 
   def move(board, index, character = "X")
-    # puts move[board, index, character]
-    # position = gets.strip
-    # character = X
-  board[index] = character
-  # move(board, 2)
-  # puts move(board)
+     board[index] = character
 end
