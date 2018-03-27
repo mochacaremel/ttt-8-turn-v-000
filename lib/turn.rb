@@ -8,9 +8,6 @@ end
 
 board = ["","X"," "," "," "," "," "," "," "]
 puts "Enter a position on the board 1-9:"
-#get input
-user_input = gets.chomp
-#convert input to index
 number_entered = user_input.to_i - 1
 
 def move(board, index, character = "X")
